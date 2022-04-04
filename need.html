@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <title>Login</title>
+    <!-- <link rel="icon" href="/masterMinds_OTA/img/icologo.ico"> -->
+    <style>
+        body{background:url("../img/bg.jpg");
+             background-size:100% 100%}
+        * {
+            margin: 0px;
+        }
+
+        .burger {
+            display: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 30px;
+            align-items: center;
+            background-color: #525;
+            height: 50px;
+        }
+
+        .nav .logo {
+            color: white;
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 5px;
+            width: 150px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #525;
+        }
+
+
+        .nav .items {
+            align-items: center;
+            flex-direction: line;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav .item {
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #525;
+            transition: all .3s ease;
+        }
+
+        .nav .item:hover {
+            background-color: #636;
+            transition: all .3s ease;
+        }
+
+
+        .item a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        @media (max-width: 600px) {
+            .nav .items {
+                transform: translateX(100%);
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                position: absolute;
+                top: 50px;
+                right: 0px;
+                height: 70px;
+                width: 100px;
+                transition: all .3s ease;
+            }
+
+            .items .item {
+                width: 100%;
+                height: 100%;
+            }
+
+            .burger {
+                display: block;
+            }
+
+        }
+
+        #menu_btn {
+            font-family: 'Raleway', sans-serif;
+
+        }
+
+
+        @media (min-width: 600px) {
+            .nav .items {
+                transform: translateX(0%) !important;
+
+            }
+
+
+        }
+
+        @media screen and (min-width: 503px) and (max-width: 600px) {
+            .container {
+                font-size: 10px;
+                padding: 50px;
+
+            }
+        }
+
+        @media screen and (min-width: 200px) and (max-width: 503px) {
+            .container {
+                font-size: 8px;
+                padding: 50px;
+
+            }
+        }
+
+        @media screen and (min-width: 200px) and (max-width: 508px) {
+            #register {
+                background-color: transparent;
+                border: 0px solid #FFF;
+
+
+                color: #fff;
+                font-size: 10px;
+                text-transform: uppercase;
+
+
+            }
+        }
+
+        @media screen and (min-width: 200px) and (max-width: 508px) {
+            .button {
+                position: absolute;
+                left: 250px;
+
+            }
+        }
+
+
+        /*Start Global Style*/
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        @media (min-width: 320px) {}
+
+
+        body {
+            /* background: #e9ebee; */
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            height: 100vh;
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            height: 100%
+        }
+
+        .login,
+        .register {
+            width: 50%
+        }
+
+        /*Start Login Style*/
+        .login {
+            float: left;
+            background-color: #fafafa;
+            height: 100%;
+
+            padding-top: 100px;
+        }
+
+        .login h1 {
+            margin-bottom: 40px;
+            font-size: 2.5em;
+        }
+
+        input[type="User name"],
+        input[type="password"],
+        input[type="text"],
+        input[type=""] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 30px;
+            border: none;
+            background-color: #eeeeef;
+        }
+
+
+
+        .login button {
+            width: 100%;
+            margin: 30px 0;
+            padding: 10px;
+            border: none;
+            background-color: #9526a9;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+
+
+
+        .login p {
+            display: inline-block;
+            margin: 0px 10px 30px;
+        }
+
+
+        /*Start Register .................... Style*/
+        .register {
+            float: right;
+            background-image: linear-gradient(135deg, #23212f 5%, #9526a9 95%);
+            height: 100%;
+            color: #fff;
+            border-radius: 0 10px 10px 0;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .register h2 {
+            margin: 30px 0;
+            font-size: 50px;
+            letter-spacing: 3px
+        }
+
+        .register p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .register button {
+            background-color: transparent;
+            border: 1px solid #FFF;
+            border-radius: 20px;
+            padding: 10px 20px;
+            color: #fff;
+            font-size: 20px;
+            text-transform: uppercase;
+            transition: 0.2s all ease-in-out;
+        }
+
+        .register button:hover {
+            color: #9526a9;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+ /*Start footer  Style*/
+        .footer {
+height: 50px;
+width: 100%;
+position: absolute;
+top: 100%;
+display: flex;
+ justify-content: space-between;
+ background-color: #525;
+ color: white;
+ font-family: 'Raleway', sans-serif;
+left:0;}
+
+.footer a{
+text-decoration: none;
+color: white;
+font-family: 'Raleway', sans-serif;
+padding-right: 20px;
+padding-top: 15px;
+}
+footer p {padding-left: 20px;
+    padding-top: 15px;}
+
+    </style>
+</head>
+
+<body>
+
+    <!--Open NAvigation bar -->
+    
+    <nav class="nav">
+        <div class='logo'>
+            <h1> OTA</h1>
+        </div>
+        <ul id="menu" class="items">
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">About</a></li>
+        </ul>
+        <span id="menu_btn" class="material-icons burger">Menu</apan>
+    </nav>
+    <!-- END NAvigation bar -->
+
+    <!-- start  container -->
+ <!-- onsubmit="login() -->
+    <div class="container">
+        <div class="login">
+            <div class="container">
+                <form id="login">
+                <h1>Log in</h1>
+                <input type="text" placeholder="User name" name="firstname" id="usrname">
+                <input type="password" placeholder="password" name="password" id="usrpassword">
+                <br><br>
+                <!-- end  container -->
+                <span id="msg"></span>  <!--- msg -->
+
+                <!--start log in -->
+                <button type="submit"onsubmit="unclice()" >log in</button>
+
+                <!--end log in -->
+                    </form>
+            </div>
+        </div>
+        <!--start register-->
+        <div class="register">
+            <div class="container">
+
+                <h2 class="hello">Hello</h2>
+                <p>Enter your personal details and start journey with us</p>
+                <a href="./sing in .html"><button class="button">Register <i id="register" class="fas fa-arrow-circle-right"></i></button></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div id="footer" class="footer">
+           <P id="pf" class="pf"> @ All Copyright Reserved </P>
+           <a href="" id="info" class="info"> Info. </a>
+        </div>
+
+    </footer>
+    
+
+</body>
+<script>
+//     const menu_btn = document.querySelector("#menu_btn");
+// const menu = document.querySelector("#menu");
+// menu_btn.addEventListener('click',()=>{
+//   if(menu.style.transform == "translateX(100%)"){
+//     menu.style.transform = "translateX(0%)";
+//   }else{
+//     menu.style.transform = "translateX(100%)"
+//   }
+// });
+
+///////////////////////////////////////////////
+
+// // var user={
+// // userName:userName,
+// // pass:pass,
+// // };
+
+// // console.log(user);
+
+// // var jsondata = JSON.stringify(user);
+// // var x= localStorage.setItem(userName, jsondata)
+// // // console.log(x);
+
+// // function login(e){
+// // e.preventDefault();
+// // var  userName= document.getElementById('userName').value
+// // var pass= document.getElementById('pass').value
+// // // var msg=document.getElementById('msg');
+// // console.log(userName);
+// // var user=localStorage.getItem(userName);
+// // var data= JSON.parse(user);
+// // console.log(user);
+// // console.log(data);
+
+// // if (user==''){
+// //     result.innerHTML='worng user name';
+// // }
+// // else if (userName==data.userName && pass==data.pass){
+// // result.innerHTML='logged in';
+// // }
+// // else{
+// //     result.innerHTML='worng password';
+// // }
+// // }
+
+
+// function validateRequiredFields(this_form)
+//    {
+//       var username=this_form.usrname.value;
+//       var password=this_form.usrpassword.value;
+//       if(username==null || username=="")
+//       {
+//          alert("Please enter your username");
+//          this_form.usrname.focus();
+//          return false;
+//       }
+//       if(password==null || password=="")
+//       {
+//          alert("Please enter your password");
+//          this_form.usrpassword.focus();
+//          return false;
+//       }
+//       return true;
+//    }
+
+
+let regFormx=document.getElementById('login');
+let firstName=document.getElementById('usrname');
+let passwordError=document.getElementById('usrpassword');
+
+let info=[];
+
+
+
+/*LocalStorage */
+
+function LocalStorageFrom(){
+    let array=JSON.stringify(info);
+    localStorage.setItem('Data',array); 
+
+
+
+}
+
+
+function regForm(fname,password){
+    this.fname=fname;
+    this.password=password;
+this.first=userName(fname);
+this.second=checkPassword(password);
+
+
+    console.log(this.fname);
+    console.log(this.password);
+
+    info.push(fname);
+    info.push(password);
+
+    LocalStorageFrom()
+}
+
+
+
+/*To check from the date */
+// function checkDate(date)
+// {
+//  let regex=/(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[13-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$/;
+//  if(regex.test(date)){
+//      console.log('correct date');
+//      return date;
+//  }
+//  else{
+//      console.log('inncorrect date');
+//      emailError.innerHTML='inncorrect date';
+//  }
+// }
+
+// /*To return the full name */
+function userName(fname){
+    let x;
+    let regex = /^[a-zA-Z\s]+$/;
+    if ((regex.test(fname))){
+        console.log('correct');
+        x = fname ;
+        return x;
+    }
+    else{
+        // nameError.innerHTML='Incorrect name'
+        alert ('Incorrect name')
+        return 'Incorrect name';
+    }}
+
+
+// function userName(password){
+//     let y;
+//     let regex = /^[a-zA-Z\s]+$/;
+//     if ((regex.test(password))){
+//         console.log('correct');
+//         y = password ;
+//         return y;
+//     }
+//     else{
+//         // nameError.innerHTML='Incorrect name'
+//         alert ('Incorrect name')
+//         return 'Incorrect name';
+//     }
+// }
+
+function checkPassword(password){
+    let regex=/^(?=.*[a-z])(?=.*[A-Z])(?=(.*[\d]){2,})[A-Za-z\d?]{8,32}$/;
+    let num=/[\d]{2,}/;
+    let capital=/[A-Z]/;
+    let symboles=/[#$@!%&*?]/;
+    if ((regex.test(password))){ //To check from  passwords syntax
+        alert('password syntax is Incorrect');
+        passwordError.innerHTML= 'password syntax is Incorrect';
+        
+    }
+    else if((!capital.test(password[0]))){ //To check from the first letter
+        alert( 'Incorrect! password must be capital.');
+        passwordError.innerHTML= 'Incorrect! password must be capital.';
+    }
+    else if((!num.test(password))){
+        alert('You password must contain 2 numbers at least');
+        passwordError.innerHTML= 'You password must contain 2 numbers at least';
+    }
+    else if((!symboles.test(password))){
+        alert('You password must contain  at least 1 character');
+        passwordError.innerHTML= 'You password must contain  at least 1 character';
+    }
+    // else{
+    // //     alert(`Passwords don't match or the length is more than 8 or less than 32`);
+    // //    passwordError.innerHTML= `Passwords don't match or the length is incorrect (length must be more or equal than 8 and less than or equal 32`;
+    // }
+}
+
+
+
+
+regFormx.addEventListener('submit', handelSubmit);
+function handelSubmit(e){
+    e.preventDefault();
+
+    let fname=e.target.firstname.value;
+   
+    let password=e.target.password.value;
+  
+    new regForm(fname,password); //Calling the constructor
+}
+handelSubmit();
+function renderInfo(){
+    
+}
+function unclice(event) {
+    window.location="./quize.html"
+}
+
+
+</script>
+
+</html>

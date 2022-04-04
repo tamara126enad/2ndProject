@@ -1,0 +1,284 @@
+body{background:url("../img/bg.jpg");
+    background-size:100% 100%}
+* {
+   margin: 0px;
+}
+
+.burger {
+   display: none;
+   color: white;
+   cursor: pointer;
+}
+
+.nav {
+   display: flex;
+   justify-content: space-between;
+   padding-right: 30px;
+   align-items: center;
+   background-color: #525;
+   height: 50px;
+}
+
+.nav .logo {
+   color: white;
+   font-family: 'Raleway', sans-serif;
+   letter-spacing: 5px;
+   width: 150px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #525;
+}
+
+
+.nav .items {
+   align-items: center;
+   flex-direction: line;
+   display: flex;
+   justify-content: space-around;
+}
+
+.nav .item {
+   width: 100px;
+   height: 50px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #525;
+   transition: all .3s ease;
+}
+
+.nav .item:hover {
+   background-color: #636;
+   transition: all .3s ease;
+}
+
+
+.item a {
+   text-decoration: none;
+   color: white;
+   font-family: 'Raleway', sans-serif;
+}
+
+@media (max-width: 600px) {
+   .nav .items {
+       transform: translateX(100%);
+       display: flex;
+       align-items: center;
+       justify-content: space-around;
+       flex-direction: column;
+       position: absolute;
+       top: 50px;
+       right: 0px;
+       height: 70px;
+       width: 100px;
+       transition: all .3s ease;
+   }
+
+   .items .item {
+       width: 100%;
+       height: 100%;
+   }
+
+   .burger {
+       display: block;
+   }
+
+}
+
+#menu_btn {
+   font-family: 'Raleway', sans-serif;
+
+}
+
+
+@media (min-width: 600px) {
+   .nav .items {
+       transform: translateX(0%) !important;
+
+   }
+
+
+}
+
+@media screen and (min-width: 503px) and (max-width: 600px) {
+   .container {
+       font-size: 10px;
+       padding: 50px;
+
+   }
+}
+
+@media screen and (min-width: 200px) and (max-width: 503px) {
+   .container {
+       font-size: 8px;
+       padding: 50px;
+
+   }
+}
+
+@media screen and (min-width: 200px) and (max-width: 508px) {
+   #register {
+       background-color: transparent;
+       border: 0px solid #FFF;
+
+
+       color: #fff;
+       font-size: 10px;
+       text-transform: uppercase;
+
+
+   }
+}
+
+@media screen and (min-width: 200px) and (max-width: 508px) {
+   .button {
+       position: absolute;
+       left: 250px;
+
+   }
+}
+
+
+/*Start Global Style*/
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+@media (min-width: 320px) {}
+
+
+body {
+   /* background: #e9ebee; */
+   /* display: flex; */
+   /* justify-content: center; */
+   /* align-items: center; */
+   height: 100vh;
+   font-family: sans-serif;
+}
+
+.container {
+   width: 80%;
+   margin: auto;
+   padding: 20px;
+   height: 100%
+}
+
+.login,
+.register {
+   width: 50%
+}
+
+/*Start Login Style*/
+.login {
+   float: left;
+   background-color: #fafafa;
+   height: 100%;
+
+   padding-top: 100px;
+}
+
+.login h1 {
+   margin-bottom: 40px;
+   font-size: 2.5em;
+}
+
+input[type="User name"],
+input[type="password"],
+input[type="text"],
+input[type=""] {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 30px;
+   border: none;
+   background-color: #eeeeef;
+}
+
+
+
+.login button {
+   width: 100%;
+   margin: 30px 0;
+   padding: 10px;
+   border: none;
+   background-color: #9526a9;
+   color: #fff;
+   font-size: 20px;
+   cursor: pointer;
+
+}
+
+
+
+
+.login p {
+   display: inline-block;
+   margin: 0px 10px 30px;
+}
+
+
+/*Start Register .................... Style*/
+.register {
+   float: right;
+   background-image: linear-gradient(135deg, #23212f 5%, #9526a9 95%);
+   height: 100%;
+   color: #fff;
+   border-radius: 0 10px 10px 0;
+   text-align: center;
+   padding: 100px 0;
+}
+
+.register h2 {
+   margin: 30px 0;
+   font-size: 50px;
+   letter-spacing: 3px
+}
+
+.register p {
+   font-size: 18px;
+   margin-bottom: 30px;
+}
+
+.register button {
+   background-color: transparent;
+   border: 1px solid #FFF;
+   border-radius: 20px;
+   padding: 10px 20px;
+   color: #fff;
+   font-size: 20px;
+   text-transform: uppercase;
+   transition: 0.2s all ease-in-out;
+}
+
+.register button:hover {
+   color: #9526a9;
+   background-color: #fff;
+   cursor: pointer;
+}
+
+/*Start footer  Style*/
+.footer {
+height: 50px;
+width: 100%;
+position: absolute;
+top: 100%;
+display: flex;
+justify-content: space-between;
+background-color: #525;
+color: white;
+font-family: 'Raleway', sans-serif;
+left:0;}
+
+.footer a{
+text-decoration: none;
+color: white;
+font-family: 'Raleway', sans-serif;
+padding-right: 20px;
+padding-top: 15px;
+}
+footer p {padding-left: 20px;
+padding-top: 15px;}

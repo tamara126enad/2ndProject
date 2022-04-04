@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JavaScript Quiz App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/obada.css">
+    
+</head>
+<body style="background: url('../img/bg.jpg'); background-size: cover;">
+
+    <header class="f-w">
+        <div class="headd">
+            <div class="hd">
+                <nav class="t-nav bg f-w">
+                    <h2> OTA </h2>
+                    <div id="link" class="link">
+                        <a href="masterMinds_OTA/pages/aboutUs.html">About Us</a>
+                        <a href="#" onclick="logout()">Logout</a>     <!---  no logout in reg. page-->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div id="app"> 
+            <h1 id="h1" class="h1"> Welcome <span id="dear"></span></h1>
+            <h3 id="h3" class="h3"> Quiz Website helps you to learn <br>
+                the most popular Front-end languages<br>
+            <button id="start">START</button>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <div id="footer" class="footer">
+           <P id="pf" class="pf">  All Copyright @ Reserved   </P>
+           <P id="ota" class="otar">  Desgined by OTA, 2022 </P>
+
+        </div>
+    </footer>
+    <script src="../js/tamara.js"></script>
+    <script>
+        document.getElementById('dear').innerHTML='Dear'
+        // localStorage.getItem('fname')
+    </script>
+</body>
+</html>
