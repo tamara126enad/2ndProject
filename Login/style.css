@@ -1,0 +1,109 @@
+body {
+    background-color: #0bbbb55b  !important;
+    font-family: monospace;
+   
+}
+
+.d1 {background-color: #fff;
+    width: 50%;
+    border-radius:25px;
+    /* font-size:20px; */
+    margin-left:25%;
+    margin-top:8%;
+    height: 500px; 
+    padding: 50px 0;
+    box-shadow: 20px 20px 50px grey;
+
+ 
+} 
+
+.d1 h1 {
+    font-weight: bolder;
+    padding-left: 10%;
+    padding-top: 50px;
+   
+}
+
+.f1 {
+    padding-left: 10%;
+    padding-top: 5%;
+    text-align: left;
+}
+
+.f1 input {
+    border-radius: 10px;
+}
+
+.img2 {
+
+        background: url('https://cdn.dribbble.com/users/14374/screenshots/3147608/programer.gif') ;
+        background-repeat:  no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        position: absolute;
+       top:17%;
+       left:50%;
+       border-radius: 25px;
+       border-top-left-radius:0 ;
+       border-bottom-left-radius:0 ;
+       width:25%;
+       height:61%;}
+
+       form i {
+           margin-left: -20px;
+       }
+      
+
+#login{
+    width: 15%;
+    height: 40px;
+    background-color: #ee6e23;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    margin-left: 7%;
+    margin-top: 10px;
+}
+
+#login:hover{
+    background-color: #ee6d23b8;
+}
+
+
+
+
+
+
+
+ #footer{
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+} 
+
+#footer{
+    height: 10px;
+    background-color: white;
+   
+    text-align: center;
+   
+  }
+  
+  #footer span {
+    position: absolute;
+    right: 40%;
+    
+  }
+  
+  #s1{
+  
+    bottom: 30px;
+  
+  }
+  #s2{
+  
+    bottom: 5px;
+  
+  }

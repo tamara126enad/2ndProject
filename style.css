@@ -1,0 +1,362 @@
+
+.wrapper {
+    height: 20vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing-demo {
+    width: 40ch;
+    animation: typing 2s steps(1000), blink .100s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    position: absolute;
+    top: 38%;
+    right: 3%;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  } 
+      
+  /* @keyframes blink { */
+    /* 50% { */
+      /* border-color: transparent */
+    /* } */
+  /* } */
+
+h1{
+
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  text-shadow: 5px 10px 10px white;
+  font-family: monospace;
+ 
+}
+
+  .d1{
+
+    background-image: url("./img/background.png");
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+
+  }
+
+  #img{
+      margin-right: 30px;
+     
+     
+
+      
+  }
+
+  #img img {
+      border-radius: 25px;
+      box-shadow: 20px 20px 50px grey;
+      width: 40%;
+      margin-left: 10%;
+      height: 40%;
+      margin-top: 10%;
+     
+      
+
+  }
+
+
+
+  .homebtn{
+    width: 8%;
+    height: 40px;
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+    border: none;
+    margin-left: 20%;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 20%;
+    right: 25%;
+    font-size: medium;
+}
+
+.homebtn:hover {
+
+  background-color:rgba(255, 255, 255, 0.793);
+  border: 2px solid gray;
+}
+
+#b1{
+  position: absolute;
+  bottom: 20%;
+  right: 15%;
+}
+
+#b2{
+  position: absolute;
+  bottom: 20%;
+  right: 25%;
+}
+
+
+.homebtn a{
+ color: black;
+ text-decoration: none;
+}
+
+.homebtn a:hover{
+  color: black;
+}
+
+
+
+
+
+
+
+
+  
+
+  #footer{
+      height: 10px;
+      background-color: white;
+  }
+
+  #footer span {
+padding-bottom: 20px;
+  }
+
+
+  /* /////////////////////////////////////////////////// */
+  @media screen and (max-width:1024px){
+    *{
+      font-size: 5px;
+    }
+    #img{
+      position: absolute;
+      top: 13%;
+      right: 20%;
+    }
+    
+    .butonn{
+      position: absolute;
+      top:60%;
+      left: 90%;
+      
+    }
+    
+    .butonn2{
+      position: absolute;
+      top:60%;
+      left: 85%;
+    }
+    
+    .styleh1{
+      padding-top: 150%;
+      
+    }
+ .homebtn{
+      width: 30px;
+      height: 40px;
+      background-color: rgb(250, 238, 238);
+      border-radius: 8px;
+      color: black;
+      border: none;
+      margin-left: 25%;
+      margin-top: 10px;
+      position: absolute;
+      bottom: 20%;
+      right: 25%;
+      font-size: medium;
+    }
+
+
+
+
+@media screen and (max-width:768px) { 
+
+  *{
+    font-size: 5px;
+  }
+  #img{
+    position: absolute;
+    top: 13%;
+    right: 20%;
+  }
+  
+  .butonn{
+    position: absolute;
+    top:60%;
+    left: 90%;
+    
+  }
+  
+  .butonn2{
+    position: absolute;
+    top:60%;
+    left: 80%;
+  }
+  
+  .styleh1{
+    padding-top: 150%;
+    
+  }
+  
+  .homebtn{
+    width: 30px;
+    height: 40px;
+    background-color: rgb(250, 238, 238);
+    border-radius: 8px;
+    color: black;
+    border: none;
+    margin-left: 25%;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 20%;
+    right: 25%;
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width:640px) {
+  *{
+    font-size: 5px;
+  }
+  #img{
+    position: absolute;
+    top: 13%;
+    right: 20%;
+  }
+  
+  .butonn{
+    position: absolute;
+    top:60%;
+    left: 65%;
+    
+  }
+  
+  .butonn2{
+    position: absolute;
+    top:60%;
+    left: 50%;
+  }
+  
+  .styleh1{
+    padding-top: 150%;
+    
+  }
+  
+  .homebtn{
+    width: 30px;
+    height: 40px;
+    background-color: rgb(250, 238, 238);
+    border-radius: 8px;
+    color: black;
+    border: none;
+    margin-left: 25%;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 20%;
+    right: 25%;
+    font-size: medium;
+  }
+
+}}
+
+@media screen and (max-width:480px) { 
+  *{
+    font-size: 5px;
+  }
+  #img{
+    position: absolute;
+    top: 13%;
+    right: 20%;
+  }
+  
+  .butonn{
+    position: absolute;
+    top:60%;
+    left: 65%;
+    
+  }
+  
+  .butonn2{
+    position: absolute;
+    top:60%;
+    left: 50%;
+  }
+  
+  .styleh1{
+    padding-top: 150%;
+    
+  }
+  
+  .homebtn{
+    width: 30px;
+    height: 40px;
+    background-color: rgb(250, 238, 238);
+    border-radius: 8px;
+    color: black;
+    border: none;
+    margin-left: 25%;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 20%;
+    right: 25%;
+    font-size: medium;
+  }
+
+}
+/* /////////////// 320px  */
+@media screen and (max-width:320px) { 
+
+*{
+  font-size: 5px;
+}
+#img{
+  position: absolute;
+  top: 13%;
+  right: 20%;
+}
+
+.butonn{
+  position: absolute;
+  top:60%;
+  left: 65%;
+  
+}
+
+.butonn2{
+  position: absolute;
+  top:60%;
+  left: 50%;
+}
+
+.styleh1{
+  padding-top: 150%;
+  
+}
+
+.homebtn{
+  width: 30px;
+  height: 40px;
+  background-color: rgb(250, 238, 238);
+  border-radius: 8px;
+  color: black;
+  border: none;
+  margin-left: 25%;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 20%;
+  right: 25%;
+  font-size: medium;
+}
+}
