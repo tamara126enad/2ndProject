@@ -21,15 +21,14 @@ Group members:
 
 
 
-[live link ](https://tamara126enad.github.io/2ndProject/)
+[live link ](https://11-ayaalsawa.github.io/Quiz_project/)
 
 
-[Repo link ](https://github.com/11-ayaalsawa/Quiz_project)
+[Repo link ](https://github.com/tamara126enad/QuizOnline2)
 
 
 
-[github](https://github.com/11-ayaalsawa)
+[github](https://github.com/tamara126enad)
 
 
 [trello](https://trello.com/invite/b/JaunnpQr/7165cacf88640de3fa3efb630c1ebd2f/ota)
-
